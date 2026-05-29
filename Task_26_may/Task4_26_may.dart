@@ -1,9 +1,6 @@
 import 'dart:io';
 
 void main() {
-
-  // 4. W.A.P to reverse any String ex: hiren -> nerih
-
   stdout.write("Enter Number : ");
   var characters = stdin.readLineSync().toString().split('');
 
