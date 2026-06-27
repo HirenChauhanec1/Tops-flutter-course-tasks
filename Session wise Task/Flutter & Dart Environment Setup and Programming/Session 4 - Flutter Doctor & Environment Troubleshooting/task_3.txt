@@ -1,0 +1,14 @@
+
+I got an error when I ran flutter doctor command in the android studio's terminal.
+To solve the error, I found a solution in official flutter documentation, which is shown below.
+
+1.Install Visual Studio
+
+If we haven't done so already, We should follow the Microsoft guide to install and set up Visual Studio.
+If we've already installed Visual Studio, We should update it to the latest version.
+
+2.Set up Visual Studio workloads
+
+When the Visual Studio installer prompts you to choose workloads, We should select and
+install the Desktop development with C++ workload.
+If we already installed Visual Studio, We should follow the Microsoft guide to Modify Visual Studio workloads.
