@@ -1,0 +1,35 @@
+
+5.
+Use an AI tool like ChatGPT to troubleshoot a connection issue you face
+while running your Flutter app on your device.
+Paste the error message you get and follow the AI's suggested steps to resolve it.
+Summarize what worked for you in 2-3 lines.
+
+Error Message:
+
+Launching lib\main.dart on Redmi Note 13 pro plus in debug mode...
+Error: ADB exited with exit code 1
+error: device unauthorized.
+This adb server's $ADB_VENDOR_KEYS is not set.
+Try 'adb kill-server' if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+
+
+AI Suggested Steps:
+
+Disconnect and reconnect the Android device.
+Enable Developer Options and USB Debugging on the phone.
+Accept the "Allow USB debugging" prompt on the device.
+Restart the ADB server:
+      1.adb kill-server
+      2.adb start-server
+      3.adb devices
+Run the Flutter app again:
+      flutter run
+
+
+Summary :
+
+The issue was caused because my Android device was not authorized for USB debugging.
+After accepting the USB debugging ,
+Flutter detected the device successfully and the app ran without any connection errors.
