@@ -1,0 +1,26 @@
+5.
+List 3 ways to validate if your Flutter environment is set up correctly and
+describe what output or result you expect from each validation step.
+
+ans.
+
+1. Run flutter doctor
+
+Expected result:
+All major sections show a green check.
+No critical errors like missing SDKs or Android license status unknown.
+
+
+2. Run a default Flutter app on an emulator/device
+
+Expected result:
+App launches on emulator or physical device.
+We see the default counter app screen.
+No build or Gradle errors in terminal.
+
+
+3. Check connected devices using flutter devices
+
+Expected result:
+At least one device listed (e.g., Android emulator, Chrome, or phone).
+If no device is connected, output will be like No devices detected.
