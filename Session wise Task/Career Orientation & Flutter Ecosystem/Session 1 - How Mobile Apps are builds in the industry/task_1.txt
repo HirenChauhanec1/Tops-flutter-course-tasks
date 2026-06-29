@@ -1,0 +1,13 @@
+
+
+1.
+Find a real Flutter developer job posting on LinkedIn or Naukri.com and 
+list 3 skills or technologies mentioned in the requirements section.
+
+ans.
+ 
+1. Flutter & Dart
+2. State management like GetX / Provider / Bloc / Riverpod etc.
+3. Rest API
+4. Firebase
+5. SQLite

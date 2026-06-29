@@ -1,0 +1,27 @@
+3.
+Pick any app you use daily (like Zomato, Instagram, or Flipkart) and
+write a short feature request as if you were the product manager.
+Then, briefly describe which team members (designer, backend, mobile developer, tester)
+would be involved in delivering this feature and what each would do.
+
+ans.
+
+App Chosen: Instagram
+
+Feature Request 
+Feature Name: Scheduled Posts for Personal Accounts
+
+Description:
+As a user, I want to schedule my posts to be published automatically at a specific date and time, so I don't have to be online when I want the post to go live. This feature would be useful for students, creators, and anyone who wants to plan their content in advance.
+
+Team Members and Their Responsibilities
+
+1.Product Manager 	    : Defines the feature requirements, prioritizes it in the product roadmap, and coordinates work across the team.
+2.Designer		        : Creates the user interface for selecting the date and time, designs the scheduling flow, and ensures it is easy to
+                          use.
+3.Backend/API Developer	: Builds APIs to store scheduled posts, manages the scheduling service, and ensures posts are published automatically
+                          at the correct time.
+4.Mobile Developer	    : Implements the scheduling screens in the app, connects them to the backend APIs, and displays the scheduled posts to
+                          users.
+5.Tester (QA Engineer)  : Verifies that users can schedule, edit, and cancel posts, checks that posts are published at the correct time, and
+                          tests edge cases such as network failures and different time zones.

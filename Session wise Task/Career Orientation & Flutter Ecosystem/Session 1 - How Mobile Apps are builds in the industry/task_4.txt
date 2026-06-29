@@ -1,0 +1,33 @@
+4.
+Watch a walkthrough video of a production Flutter app (find one on YouTube, such as an open-source app demo) and write down 3 features you think a junior Flutter developer would be responsible for building or maintaining in their first 3 months.<br><br><em><strong>Hint:</strong> Look for features like login screens, list views, or profile editing.</em>
+
+ans. 
+
+1. Login and Sign-Up Screen
+
+Responsibilities:
+
+Build the login and registration UI.
+Add form validation (email, password, required fields).
+Connect the screens to authentication APIs.
+Display loading indicators and error messages.
+
+
+2. List View Screen (e.g., Doctors or Products List)
+
+Responsibilities:
+
+Display data using ListView.
+Fetch data from an API.
+Show loading, empty, and error states.
+Implement pull-to-refresh or basic pagination if required.
+
+
+3. Profile Editing Screen
+
+Responsibilities:
+
+Create a form to edit user information.
+Validate user input before saving.
+Send updated information to the backend.
+Update the UI after a successful profile update.
