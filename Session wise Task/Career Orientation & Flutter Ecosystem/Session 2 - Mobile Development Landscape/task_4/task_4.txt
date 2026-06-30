@@ -1,0 +1,33 @@
+4.
+Given the following widget tree: Scaffold > Column > [ProfilePic, Username, FollowersRow],
+draw or describe the widget hierarchy for a BookMyShow-like movie ticket card, including at least four widgets.
+
+ans. 
+
+Scaffold
+└── Center
+    └── Card
+        └── Padding
+            └── Column
+                ├── Image (Movie Poster)
+                ├── Text (Movie Name)
+                ├── Row
+                │   ├── Icon (Location)
+                │   └── Text (Theater Name)
+                ├── Row
+                │   ├── Icon (Calendar)
+                │   ├── Text (Date)
+                │   └── Text (Time)
+                └── ElevatedButton (Book Tickets)
+
+Widgets used:
+1. Scaffold 	   – Provides the basic app layout.
+2. Center 	   – Centers the card on the screen.
+3. Card 	   – Displays the movie ticket information in a card.
+4. Padding 	   – Adds spacing inside the card.
+5. Column 	   – Arranges the card contents vertically.
+6. Image 	   – Displays the movie poster.
+7. Text 	   – Shows the movie name, theater, date, and time.
+8. Row 		   – Places icons and related text horizontally.
+9. Icon 	   – Represents location and calendar visually.
+10. ElevatedButton – Allows the user to book tickets.

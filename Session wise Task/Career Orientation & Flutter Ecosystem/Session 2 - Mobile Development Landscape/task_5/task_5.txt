@@ -1,0 +1,10 @@
+5.
+Use ChatGPT or GitHub Copilot to suggest improvements to your MusicCard widget code (from task 2),
+such as better widget structuring or styling, and implement at least one suggestion.
+<br><br><em><strong>Hint:</strong> Paste your code and ask for Flutter best practices or UI enhancements.</em>
+
+ans.
+
+I got one improvement from ChatGPT is that to make the widget reusable by passing
+the song name and artist as parameters instead of hardcoding them.
+I can also add rounded corners and improve the spacing.
