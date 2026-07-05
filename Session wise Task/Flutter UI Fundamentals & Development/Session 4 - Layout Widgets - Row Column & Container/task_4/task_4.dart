@@ -23,7 +23,8 @@ class PlaylistCardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Spotify Playlist Card"),
+        title: Text("Spotify Playlist Card",style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.green.shade400,
       ),
       backgroundColor: Colors.white,
       body: Center(

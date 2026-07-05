@@ -5,7 +5,7 @@ void main() {
 }
 
 class InstaProfileApp extends StatelessWidget {
-   const InstaProfileApp({super.key});
+  const InstaProfileApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class InstaProfileApp extends StatelessWidget {
 }
 
 class MenuBarScreen extends StatelessWidget {
-   const MenuBarScreen({super.key});
+  const MenuBarScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class MenuBarItem extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        "Profile",
+        title,
         style: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,

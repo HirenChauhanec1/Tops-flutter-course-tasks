@@ -23,7 +23,7 @@ class ProductCardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flipkart Product Card"),
+        title: Text("Flipkart Product Card",style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.blue,
       ),
       body: Center(
