@@ -1,0 +1,9 @@
+1. The exact prompt(s) you gave the AI tool.
+
+ans.
+
+Write a Flutter StatefulWidget screen called EnrolmentScreen that displays a list of enrolled students using ListView.builder.
+Each student should display their name, roll number, and semester fee.
+Compute and display the total semester fees collected for all students in the list.
+Include a "Confirm Enrolment" button that uses setState() to update a status Text widget to "Enrolment Finalised ›" when tapped.
+If the student list is empty, display a centered message saying "No students enrolled yet" instead of showing an empty ListView.

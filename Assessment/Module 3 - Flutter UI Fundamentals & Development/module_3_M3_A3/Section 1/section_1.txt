@@ -1,0 +1,148 @@
+SCENARIO 1 : 
+
+You are building a college ERP mobile app for a chain of private engineering colleges.
+The app must serve both Android smartphones used by students and iOS devices used
+by faculty. The institution's IT team has two developers and a six-month project timeline.
+
+Question 1:
+
+What case would you make for choosing Flutter over React Native and fully native
+development for this project? Compare Flutter's approach to cross-platform rendering with
+React Native's bridge architecture and native development, and explain which trade-offs are
+most important for a small team maintaining a single codebase.
+
+ans: 
+
+I would choose Flutter because developers can build Android and iOS apps using single codebase.
+This saves time and is a good choice for a small team with only two developers.
+
+Flutter draws its own UI, so the app looks the same on both platforms and performs well.
+React Native uses a bridge to communicate with native components, which can be slower in some cases. Native development gives the best performance but requires two separate apps, making it more expensive and harder to maintain.
+
+For this project, Flutter is the best option because it is faster to develop, easier to maintain,
+and helps the team finish the app within six months.
+
+==========================================================================================================================================
+
+SCENARIO 2 : 
+
+You are building the student dashboard screen for a college ERP app in Flutter. A junior
+developer joining your team from a web background is confused about why the
+timetable grid, the attendance bar, and the announcement banner are each their own
+widget, and asks how Flutter assembles and renders them together.
+
+Question 2 : 
+
+Explain the role of the build() method in a Flutter widget and describe what happens
+in the widget tree when the student's attendance percentage is updated. Why does Flutter call
+build() again rather than patching the existing UI directly?
+
+ans : 
+
+The build() method creates and returns the UI of a Flutter widget.
+It tells Flutter how the screen should look based on the current data.
+
+When the student's attendance percentage changes, Flutter rebuilds the affected widget by calling build() again.
+It compares the new widget tree with the old one and updates only the parts of the screen that have changed.
+
+Flutter rebuilds the UI instead of directly changing it because this makes the code simpler, faster,
+and easier to maintain.
+
+===========================================================================================================================================
+
+SCENARIO 3 : 
+
+You are writing Dart code to represent a student profile for a college ERP. Each profile
+must store a roll number, the student's full name, a list of enrolled subject codes, and the
+semester fee. The system needs to create and compare many such profiles at runtime.
+
+Question 3 : 
+
+How would you design a Dart class to represent this student profile? Explain the role
+of the constructor, describe how you would instantiate multiple student objects in your program,
+and explain how Dart's type system helps catch errors like assigning a String to the fee field.
+
+ans : 
+
+A Dart Student class can have fields like rollNumber, name, subjects, and semester Fee.
+A constructor is used to initialize these values when creating an object.
+We can create multiple student objects by calling the constructor with different values.
+Dart's type system helps prevent errors by ensuring that semester Fee is a double,
+so assigning a String to it will cause a compile-time error.
+
+
+===========================================================================================================================================
+
+SCENARIO 4 :
+
+You are building an attendance module for the ERP app. The module must fetch today's
+attendance records from the college server when a faculty member opens the screen.
+The server is sometimes slow and returns a 500 error when the database is being
+backed up.
+
+Question 4 : 
+
+How do async, await, and Future work together in Dart to keep the UI responsive while
+the attendance data loads? Describe how you would use try-catch to handle the server error
+gracefully, and explain what the screen should display between the time the request is sent and
+the data arrives.
+
+ans : 
+
+Future, async, and await allow the app to load attendance data without freezing the UI.
+While waiting for the server response, the screen can show a loading indicator.
+If the server returns a 500 error, try-catch can catch the error
+and display a friendly error message instead of crashing the app.
+
+
+===========================================================================================================================================
+
+SCENARIO 5 : 
+
+You are building a marks entry screen for a college ERP app. When a faculty member
+enters a score for a student and taps 'Save', the class average displayed at the top of
+the same screen must recalculate and refresh immediately without navigating away.
+
+Question 5 : 
+
+Would you use a StatelessWidget or StatefulWidget for this screen? Justify your
+choice, and explain the exact mechanism by which calling setState() triggers Flutter to rebuild
+the widget and update the displayed class average.
+
+ans : 
+
+I would use a Stateful Widget because the class average changes when marks are saved.
+Calling setState() tells Flutter that the widget's data has changed.
+Flutter then calls the build() method again and updates only the changed parts of the screen,
+including the new class average.
+
+
+===========================================================================================================================================
+
+SCENARIO 6 : 
+
+You are designing a student result card for the ERP app's dashboard. The card must
+display the student's photo placeholder, name, current CGPA, semester, and a 'View
+Details' button. On compact Android phones the CGPA text and the button overlap, while
+on larger phones there is excessive whitespace.
+
+Question 6 : 
+
+Which Flutter layout widgets would you use to prevent the overlap and distribute
+space correctly across screen sizes? Explain how Expanded, Flexible, or MediaQuery can replace
+hard-coded pixel values to make the card adaptive.
+
+ans : 
+
+I would use Row, Column, Expanded, Flexible, and MediaQuery to build the result card.
+Expanded and Flexible help widgets share space properly and prevent overlap.
+MediaQuery adjusts the layout based on the screen size instead of using fixed pixel values,
+making the card responsive on both small and large devices.
+
+
+
+
+
+
+
+

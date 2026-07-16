@@ -1,0 +1,9 @@
+3. A 3–4 line note explaining what you changed and why the AI's version needed it.
+
+ans. 
+
+After testing the AI-generated code, I found that the "Confirm Enrolment" button could be pressed repeatedly
+even after the enrolment had already been finalised.
+I fixed this by adding a Boolean variable named isConfirmed and
+disabling the button after the first successful confirmation.
+This makes the interface more user-friendly and prevents unnecessary repeated actions.
